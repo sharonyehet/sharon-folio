@@ -1,8 +1,6 @@
 "use client";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import Tag from "./Tag";
 
 // @ts-ignore
@@ -11,16 +9,14 @@ import { useInView } from "react-intersection-observer";
 
 export default function FolioCard({
   title,
-  img,
   gitLink,
   liveLink,
   about,
   stack,
 }: {
-  img: string;
   title: string;
   gitLink?: string;
-  liveLink: string;
+  liveLink?: string;
   about: string;
   stack: string[];
 }) {
@@ -37,38 +33,34 @@ export default function FolioCard({
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
       }`}
     >
-      <Image
-        src={img}
-        width={420}
-        height={700}
-        alt="work"
-        className="rounded-[10px] w-full lg:col-span-5"
-      />
-      <div className="flex flex-col gap-4 lg:col-span-7">
+      <div className="flex flex-col gap-4 col-span-12">
         <div className="flex items-center justify-between">
           <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold">
             {title}
           </h2>
           <div className="flex gap-3 md:gap-4 text-2xl sm:text-3xl xl:text-4xl">
             <Link
-              href={liveLink}
+              href={`${liveLink ? liveLink : "#"}`}
               className="rounded-full bg-icon-radial p-3 hover:bg-red"
               target="_blank"
-              aria-label="View Github Repo"
+              aria-label="View Live Demo"
               data-blobity-radius="34"
               data-blobity-magnetic="true"
+              {...(!liveLink && {
+                "data-blobity-tooltip": "N/A",
+              })}
             >
-              <Icon icon="line-md:external-link-rounded" />
+              <Icon icon="line-md:external-link-rounded" className={`${!liveLink && "opacity-30"}`}/>
             </Link>
             <Link
               href={`${gitLink ? gitLink : "#"}`}
               className="rounded-full bg-icon-radial p-3"
               target="_blank"
-              aria-label="View Live Demo"
+              aria-label="View Github Repo"
               data-blobity-radius="34"
               data-blobity-magnetic="true"
               {...(!gitLink && {
-                "data-blobity-tooltip": "Privately owned by Offset",
+                "data-blobity-tooltip": "Privately owned",
               })}
             >
               <Icon

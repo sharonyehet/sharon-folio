@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import Link from "next/link";
-import { Syne } from "next/font/google";
 import { useView } from "@/contexts/ViewContext";
+import { Syne } from "next/font/google";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import AnimatedBody from "../ui/AnimatedBody";
 import AnimatedTitle from "../ui/AnimatedTitle";
@@ -27,11 +26,11 @@ export default function About() {
         charSpace={"mr-[0.001em]"}
         className={`uppercase ${syne.className} antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80`}
       >
-        I amplify brand voices through the web
+        About Me
       </AnimatedTitle>
 
       <div className="grid grid-cols-1 lg:grid-cols-[8.5fr_3.5fr] gap-8 mt-6">
-        <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-xl md:text-2xl">
+        {/* <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-xl md:text-2xl">
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
             My passion lies in creating strong business solutions that aid
             business growth. Whether it&apos;s a website to boost brand
@@ -60,7 +59,7 @@ export default function About() {
             </Link>
             .
           </AnimatedBody>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 gap-4">
           <div>
@@ -72,8 +71,7 @@ export default function About() {
               Frontend Tools
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              JavaScript(ES6+), React, Next.js, TypeScript, Redux, Redux
-              Toolkit, React Query, HTML5, Git/GitHub, React Hook Form, Formik.
+              JavaScript(ES6+), Angular, Angular Js, RxJs, React.js, Next.js, TypeScript, HTML5.
             </AnimatedBody>
           </div>
           <div>
@@ -85,8 +83,31 @@ export default function About() {
               UI Libraries
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              CSS3/SCSS/SASS, Tailwind CSS, Styled Components, Chakra UI, Framer
-              Motion, Bootstrap, ReCharts.
+              CSS3/SCSS/SASS, Tailwind CSS, Bootstrap, Angular Material.
+            </AnimatedBody>
+          </div>
+          <div>
+            <AnimatedTitle
+              wordSpace={"mr-[0.5ch]"}
+              charSpace={"mr-[0.001em]"}
+              className="font-bold antialiased text-xl md:text-2xl mb-2"
+            >
+              Backend Tools
+            </AnimatedTitle>
+            <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
+              Python, Java, Nest.js, Prisma ORM, SendGrid, PostgreSQL, Swagger, Postman.
+            </AnimatedBody>
+          </div>
+          <div>
+            <AnimatedTitle
+              wordSpace={"mr-[0.5ch]"}
+              charSpace={"mr-[0.001em]"}
+              className="font-bold antialiased text-xl md:text-2xl mb-2"
+            >
+              Testing Tools
+            </AnimatedTitle>
+            <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
+              Jasmine, Karma, Jest, React Testing Library, Apache JMeter.
             </AnimatedBody>
           </div>
           <div>
@@ -98,7 +119,19 @@ export default function About() {
               Design Tools
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              Figma, FigJam, UX Research, UI Design, Prototyping.
+              Figma, Adobe XD.
+            </AnimatedBody>
+          </div>
+          <div>
+            <AnimatedTitle
+              wordSpace={"mr-[0.5ch]"}
+              charSpace={"mr-[0.001em]"}
+              className="font-bold antialiased text-xl md:text-2xl mb-2"
+            >
+              Other Tools
+            </AnimatedTitle>
+            <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
+              Git/Github, Azure DevOps, Jira, Confluence, Storybook, Outsystems.
             </AnimatedBody>
           </div>
         </div>

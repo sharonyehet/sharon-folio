@@ -1,11 +1,11 @@
 "use client";
 import { useView } from "@/contexts/ViewContext";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
-import { AnimatePresence, motion } from "framer-motion";
 
 export default function Header() {
   const { sectionInView } = useView();
@@ -55,14 +55,11 @@ export default function Header() {
             </Link>
           </ul>
           <div className="gap-5 text-xl hidden sm:flex">
-            <Link target="_blank" href="https://linkedin.com/in/adeola-badero">
+            <Link target="_blank" href="https://linkedin.com/in/sharon-tan-78b8261b2">
               <Icon icon="hugeicons:linkedin-01" />
             </Link>
-            <Link target="_blank" href="https://github.com/adex-hub">
+            <Link target="_blank" href="https://github.com/sharonyehet">
               <Icon icon="hugeicons:github" />
-            </Link>
-            <Link target="_blank" href="https://x.com/Ade_the_great">
-              <Icon icon="akar-icons:x-fill" />
             </Link>
           </div>
         </div>
