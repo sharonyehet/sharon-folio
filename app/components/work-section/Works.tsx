@@ -13,25 +13,32 @@ export default function Works() {
 
   const works = [
     {
-      title: "Valuing IP Admin Portal",
-      liveLink: "https://admin.valuingip.com",
+      title: "BR Capital",
+      liveLink: "https://brc.bursamalaysia.com/",
       about:
-        "Valuing IP is a platform focused on assisting businesses in valuing their intellectual property (IP) which provides users with a straightforward process to submit IP valuation requests. This website is an admin portal for Valuing IP which includes features such as User Management, Discount Management, Analytics & Reporting, and System Configuration.",
-      stack: ["angular", "typescript", "bootstrap"],
-    },
-    {
-      title: "GSC E-Payment",
-      liveLink: "https://epaymentwebapp.gsc.com.my/",
-      about:
-        "The website is part of Golden Screen Cinemas (GSC), primarily for managing online ticket purchases. It offers users the ability to view showtimes for various movies, book tickets for different cinema locations, and select specific experiences (like IMAX or 4DX). It also provides payment options for completing ticket transactions. The platform integrates features for movie selection, seat booking, merchandise purchasing and payment, serving as a convenient online tool for cinema-goers.",
-      stack: ["angular", "typescript", "tailwindcss", "SEO"],
+        "BR Capital is a debt fundraising and investing platform that facilitates both listed and unlisted small to mid-sized companies tapping into a new pool of capital outside of the traditional wholesale markets.",
+      stack: ["angular16", "typescript", "tailwindcss"],
     },
     {
       title: "Credit Bureau Malaysia",
       liveLink: "https://cbmplus.creditbureau.com.my/",
       about:
         "The website is operated by Credit Bureau Malaysia (CBM). It offers a platform for individuals and businesses to access their credit reports, manage their credit data, and monitor credit-related information. The service is designed to help users understand their credit history and improve their financial decisions by offering reports, alerts, and tools related to credit scoring.",
-      stack: ["angular", "typescript", "tailwindcss"],
+      stack: ["angular14", "typescript", "tailwindcss"],
+    },
+    {
+      title: "GSC E-Payment",
+      liveLink: "https://epaymentwebapp.gsc.com.my/",
+      about:
+        "The website is part of Golden Screen Cinemas (GSC), primarily for managing online ticket purchases. It offers users the ability to view showtimes for various movies, book tickets for different cinema locations, and select specific experiences (like IMAX or 4DX). It also provides payment options for completing ticket transactions. The platform integrates features for movie selection, seat booking, merchandise purchasing and payment, serving as a convenient online tool for cinema-goers.",
+      stack: ["angular14", "typescript", "tailwindcss", "SEO"],
+    },
+    {
+      title: "Valuing IP Admin Portal",
+      liveLink: "https://admin.valuingip.com",
+      about:
+        "Valuing IP is a platform focused on assisting businesses in valuing their intellectual property (IP) which provides users with a straightforward process to submit IP valuation requests. This website is an admin portal for Valuing IP which includes features such as User Management, Discount Management, Analytics & Reporting, and System Configuration.",
+      stack: ["angular13", "typescript", "bootstrap"],
     },
     {
       title: "Money Tracker",
